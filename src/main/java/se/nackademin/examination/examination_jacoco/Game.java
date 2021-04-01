@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Game {
 
 	private ResultFromInputs resultFromInputs = new ResultFromInputs();
-	
-	
+
+
 	public void run(ArrayList<String> values){
 		DataAnalysis dataAnalysis = new DataAnalysis();
 		getGenderFromInputValues(values);
@@ -15,8 +15,8 @@ public class Game {
 		System.out.println(dataAnalysis.buildFinalString(values));
 		runGame(values.get(0),values.get(1),values.get(2),getGenderFromInputValues(values),getAgeFromInputValues(values),values.get(5));
 	}
-	
-	
+
+
 	/**
 	public ArrayList<String> collectInputData(){
 		ArrayList<String> resultArray = new ArrayList<String>();
@@ -44,7 +44,7 @@ public class Game {
 		return resultArray;
 	}
 	 */
-	
+
 	public char getGenderFromInputValues(ArrayList<String> arrayOfInputs){
 		char genderCharacter = arrayOfInputs.get(3).charAt(0);	
 		return genderCharacter;		

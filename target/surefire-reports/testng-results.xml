@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="19" passed="19" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-01T23:16:23Z" name="Surefire suite" finished-at="2021-04-01T23:16:23Z" duration-ms="132">
+    <groups>
+    </groups>
+    <test started-at="2021-04-01T23:16:23Z" name="Surefire test" finished-at="2021-04-01T23:16:23Z" duration-ms="132">
+      <class name="se.nackademin.examination.examination_jacoco.ConversorTest">
+        <test-method signature="testGenderConversor()[pri:0, instance:testGenderConversor(se.nackademin.examination.examination_jacoco.ConversorTest)]" started-at="2021-04-02T01:16:23Z" name="testGenderConversor" finished-at="2021-04-02T01:16:23Z" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGenderConversor -->
+        <test-method signature="testCityConversor()[pri:0, instance:testCityConversor(se.nackademin.examination.examination_jacoco.ConversorTest)]" started-at="2021-04-02T01:16:23Z" name="testCityConversor" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCityConversor -->
+        <test-method signature="testAgeConversor()[pri:0, instance:testAgeConversor(se.nackademin.examination.examination_jacoco.ConversorTest)]" started-at="2021-04-02T01:16:23Z" name="testAgeConversor" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAgeConversor -->
+        <test-method signature="testNameConversor()[pri:0, instance:testNameConversor(se.nackademin.examination.examination_jacoco.ConversorTest)]" started-at="2021-04-02T01:16:23Z" name="testNameConversor" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNameConversor -->
+      </class> <!-- se.nackademin.examination.examination_jacoco.ConversorTest -->
+      <class name="se.nackademin.examination.examination_jacoco.GameTest">
+        <test-method signature="testMethod1()[pri:0, instance:testMethod1(se.nackademin.examination.examination_jacoco.GameTest)]" started-at="2021-04-02T01:16:23Z" name="testMethod1" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method signature="testMethod4()[pri:0, instance:testMethod4(se.nackademin.examination.examination_jacoco.GameTest)]" started-at="2021-04-02T01:16:23Z" name="testMethod4" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod4 -->
+        <test-method signature="testMethod2()[pri:0, instance:testMethod2(se.nackademin.examination.examination_jacoco.GameTest)]" started-at="2021-04-02T01:16:23Z" name="testMethod2" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+        <test-method signature="testMethod6()[pri:0, instance:testMethod6(se.nackademin.examination.examination_jacoco.GameTest)]" started-at="2021-04-02T01:16:23Z" name="testMethod6" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod6 -->
+        <test-method signature="testMethod9()[pri:0, instance:testMethod9(se.nackademin.examination.examination_jacoco.GameTest)]" started-at="2021-04-02T01:16:23Z" name="testMethod9" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod9 -->
+        <test-method signature="testMethod7()[pri:0, instance:testMethod7(se.nackademin.examination.examination_jacoco.GameTest)]" started-at="2021-04-02T01:16:23Z" name="testMethod7" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod7 -->
+        <test-method signature="testMethod3()[pri:0, instance:testMethod3(se.nackademin.examination.examination_jacoco.GameTest)]" started-at="2021-04-02T01:16:23Z" name="testMethod3" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+        <test-method signature="testMethod8()[pri:0, instance:testMethod8(se.nackademin.examination.examination_jacoco.GameTest)]" started-at="2021-04-02T01:16:23Z" name="testMethod8" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod8 -->
+        <test-method signature="testMethod5()[pri:0, instance:testMethod5(se.nackademin.examination.examination_jacoco.GameTest)]" started-at="2021-04-02T01:16:23Z" name="testMethod5" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod5 -->
+      </class> <!-- se.nackademin.examination.examination_jacoco.GameTest -->
+      <class name="se.nackademin.examination.examination_jacoco.ResultsFromInputsTest">
+        <test-method signature="testAgeGettersAndSettersMethods()[pri:0, instance:testAgeGettersAndSettersMethods(se.nackademin.examination.examination_jacoco.ResultsFromInputsTest)]" started-at="2021-04-02T01:16:23Z" name="testAgeGettersAndSettersMethods" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAgeGettersAndSettersMethods -->
+      </class> <!-- se.nackademin.examination.examination_jacoco.ResultsFromInputsTest -->
+      <class name="se.nackademin.examination.examination_jacoco.DataAnalysisTest">
+        <test-method signature="test3()[pri:0, instance:test3(se.nackademin.examination.examination_jacoco.DataAnalysisTest)]" started-at="2021-04-02T01:16:23Z" name="test3" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test2()[pri:0, instance:test2(se.nackademin.examination.examination_jacoco.DataAnalysisTest)]" started-at="2021-04-02T01:16:23Z" name="test2" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test4()[pri:0, instance:test4(se.nackademin.examination.examination_jacoco.DataAnalysisTest)]" started-at="2021-04-02T01:16:23Z" name="test4" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test1()[pri:0, instance:test1(se.nackademin.examination.examination_jacoco.DataAnalysisTest)]" started-at="2021-04-02T01:16:23Z" name="test1" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- se.nackademin.examination.examination_jacoco.DataAnalysisTest -->
+      <class name="se.nackademin.examination.examination_jacoco.MainTest">
+        <test-method signature="testMainMethod()[pri:0, instance:testMainMethod(se.nackademin.examination.examination_jacoco.MainTest)]" started-at="2021-04-02T01:16:23Z" name="testMainMethod" finished-at="2021-04-02T01:16:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMainMethod -->
+      </class> <!-- se.nackademin.examination.examination_jacoco.MainTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

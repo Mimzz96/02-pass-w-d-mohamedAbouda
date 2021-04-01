@@ -1,0 +1,231 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Game</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">se.nackademin.examination.examination_jacoco</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Game (se.nackademin.examination.examination_jacoco)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Game</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (10/ 10)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (71/ 71)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package se.nackademin.examination.examination_jacoco;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.util.ArrayList;
+<i>4</i>&nbsp;import java.util.Scanner;
+<i>5</i>&nbsp;
+<b class="fc"><i>6</i>&nbsp;public class Game {</b>
+<i>7</i>&nbsp;
+<b class="fc"><i>8</i>&nbsp;	private ResultFromInputs resultFromInputs = new ResultFromInputs();</b>
+<i>9</i>&nbsp;
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;	public void run(ArrayList&lt;String&gt; values){
+<b class="fc"><i>12</i>&nbsp;		DataAnalysis dataAnalysis = new DataAnalysis();</b>
+<b class="fc"><i>13</i>&nbsp;		getGenderFromInputValues(values);</b>
+<b class="fc"><i>14</i>&nbsp;		getAgeFromInputValues(values);		</b>
+<b class="fc"><i>15</i>&nbsp;		System.out.println(dataAnalysis.buildFinalString(values));</b>
+<b class="fc"><i>16</i>&nbsp;		runGame(values.get(0),values.get(1),values.get(2),getGenderFromInputValues(values),getAgeFromInputValues(values),values.get(5));</b>
+<b class="fc"><i>17</i>&nbsp;	}</b>
+<i>18</i>&nbsp;
+<i>19</i>&nbsp;
+<i>20</i>&nbsp;	/**
+<i>21</i>&nbsp;	public ArrayList&lt;String&gt; collectInputData(){
+<i>22</i>&nbsp;		ArrayList&lt;String&gt; resultArray = new ArrayList&lt;String&gt;();
+<i>23</i>&nbsp;		Scanner scanner = new Scanner(System.in);
+<i>24</i>&nbsp;		String inputValue = &quot;&quot;;
+<i>25</i>&nbsp;		System.out.println(&quot;Enter the name of the Game (String):&quot;);
+<i>26</i>&nbsp;		inputValue = scanner.nextLine();
+<i>27</i>&nbsp;		resultArray.add(inputValue);
+<i>28</i>&nbsp;		System.out.println(&quot;Enter your first name (String):&quot;);
+<i>29</i>&nbsp;		inputValue = scanner.nextLine();
+<i>30</i>&nbsp;		resultArray.add(inputValue);
+<i>31</i>&nbsp;		System.out.println(&quot;Enter your last name (String)&quot;);
+<i>32</i>&nbsp;		inputValue = scanner.nextLine();
+<i>33</i>&nbsp;		resultArray.add(inputValue);
+<i>34</i>&nbsp;		System.out.println(&quot;Enter your gender(Char):&quot;);
+<i>35</i>&nbsp;		inputValue = scanner.nextLine();
+<i>36</i>&nbsp;		resultArray.add(inputValue);
+<i>37</i>&nbsp;		System.out.println(&quot;Enter your age (int):&quot;);
+<i>38</i>&nbsp;		inputValue = scanner.nextLine();
+<i>39</i>&nbsp;		resultArray.add(inputValue);
+<i>40</i>&nbsp;		System.out.println(&quot;Enter your homecity (String):&quot;);
+<i>41</i>&nbsp;		inputValue = scanner.nextLine();
+<i>42</i>&nbsp;		resultArray.add(inputValue);
+<i>43</i>&nbsp;		
+<i>44</i>&nbsp;		return resultArray;
+<i>45</i>&nbsp;	}
+<i>46</i>&nbsp;	 */
+<i>47</i>&nbsp;
+<i>48</i>&nbsp;	public char getGenderFromInputValues(ArrayList&lt;String&gt; arrayOfInputs){
+<b class="fc"><i>49</i>&nbsp;		char genderCharacter = arrayOfInputs.get(3).charAt(0);	</b>
+<b class="fc"><i>50</i>&nbsp;		return genderCharacter;		</b>
+<i>51</i>&nbsp;	}	
+<i>52</i>&nbsp;	
+<i>53</i>&nbsp;	public int getAgeFromInputValues(ArrayList&lt;String&gt; arrayOfInputs){
+<b class="fc"><i>54</i>&nbsp;		int ageValue = Integer.parseInt(arrayOfInputs.get(4));	</b>
+<b class="fc"><i>55</i>&nbsp;		return ageValue;</b>
+<i>56</i>&nbsp;	}
+<i>57</i>&nbsp;	
+<i>58</i>&nbsp;
+<i>59</i>&nbsp;	public void runGame(String gameName, String firstName, String lastName, char gender, int age, String homeCity) {
+<b class="fc"><i>60</i>&nbsp;		System.out.println(&quot;#####################-- &quot;+gameName+&quot; --#####################&quot;);</b>
+<b class="fc"><i>61</i>&nbsp;		int valueName = calculateOutPutBasedOnNames(firstName, lastName);</b>
+<b class="fc"><i>62</i>&nbsp;		int valueGender = calculateOutPutBasedOnGender(gender);</b>
+<b class="fc"><i>63</i>&nbsp;		int valueAge = calculateOutPutBasedOnAge(age);</b>
+<b class="fc"><i>64</i>&nbsp;		int valueHomecity = calculateOutPutBasedOnHomeCity(homeCity);</b>
+<i>65</i>&nbsp;
+<b class="fc"><i>66</i>&nbsp;		resultFromInputs.setResultForNameLenght(valueName);</b>
+<b class="fc"><i>67</i>&nbsp;		resultFromInputs.setResultForGender(valueGender);</b>
+<b class="fc"><i>68</i>&nbsp;		resultFromInputs.setResultForAge(valueAge);</b>
+<b class="fc"><i>69</i>&nbsp;		resultFromInputs.setResultForHomeCity(valueHomecity);</b>
+<b class="fc"><i>70</i>&nbsp;		Conversor conversor = new Conversor();</b>
+<b class="fc"><i>71</i>&nbsp;		buildFinalString(firstName, lastName, this.resultFromInputs, conversor);</b>
+<i>72</i>&nbsp;
+<b class="fc"><i>73</i>&nbsp;	}</b>
+<i>74</i>&nbsp;
+<i>75</i>&nbsp;	
+<i>76</i>&nbsp;
+<i>77</i>&nbsp;	public int calculateOutPutBasedOnNames(String firstName, String lastName) {
+<b class="fc"><i>78</i>&nbsp;		if (firstName.length() &lt; lastName.length()) {</b>
+<b class="fc"><i>79</i>&nbsp;			return 0;</b>
+<i>80</i>&nbsp;		}
+<b class="fc"><i>81</i>&nbsp;		if (firstName.length() &gt; lastName.length()) {</b>
+<b class="fc"><i>82</i>&nbsp;			return 1;</b>
+<i>83</i>&nbsp;		} else {
+<b class="fc"><i>84</i>&nbsp;			return 2;</b>
+<i>85</i>&nbsp;		}
+<i>86</i>&nbsp;	}
+<i>87</i>&nbsp;
+<i>88</i>&nbsp;	public int calculateOutPutBasedOnGender(char gender) {
+<b class="fc"><i>89</i>&nbsp;		if (gender == &#39;M&#39;) {</b>
+<b class="fc"><i>90</i>&nbsp;			return 0;</b>
+<b class="fc"><i>91</i>&nbsp;		}if (gender == &#39;F&#39;) {</b>
+<b class="fc"><i>92</i>&nbsp;			return 1;</b>
+<i>93</i>&nbsp;		}
+<b class="fc"><i>94</i>&nbsp;		return 2;</b>
+<i>95</i>&nbsp;	}
+<i>96</i>&nbsp;
+<i>97</i>&nbsp;	public int calculateOutPutBasedOnAge(int age) {
+<b class="fc"><i>98</i>&nbsp;		if (age &lt;= 25) {</b>
+<b class="fc"><i>99</i>&nbsp;			return 0;</b>
+<i>100</i>&nbsp;		} else {
+<b class="fc"><i>101</i>&nbsp;			return 1;</b>
+<i>102</i>&nbsp;		}
+<i>103</i>&nbsp;	}
+<i>104</i>&nbsp;
+<i>105</i>&nbsp;	public int calculateOutPutBasedOnHomeCity(String homeCity) {
+<b class="fc"><i>106</i>&nbsp;		if (homeCity.substring(0, 1).equalsIgnoreCase(&quot;a&quot;)) {</b>
+<b class="fc"><i>107</i>&nbsp;			return 0;</b>
+<b class="fc"><i>108</i>&nbsp;		}if (homeCity.substring(0, 1).equalsIgnoreCase(&quot;b&quot;)) {</b>
+<b class="fc"><i>109</i>&nbsp;			return 1;</b>
+<b class="fc"><i>110</i>&nbsp;		}if (homeCity.substring(0, 1).equalsIgnoreCase(&quot;c&quot;)) {</b>
+<b class="fc"><i>111</i>&nbsp;			return 2;</b>
+<b class="fc"><i>112</i>&nbsp;		}if (homeCity.substring(0, 1).equalsIgnoreCase(&quot;d&quot;)) {</b>
+<b class="fc"><i>113</i>&nbsp;			return 3;</b>
+<b class="fc"><i>114</i>&nbsp;		}if (homeCity.substring(0, 1).equalsIgnoreCase(&quot;e&quot;)) {</b>
+<b class="fc"><i>115</i>&nbsp;			return 4;</b>
+<b class="fc"><i>116</i>&nbsp;		}if (homeCity.substring(0, 1).equalsIgnoreCase(&quot;f&quot;)) {</b>
+<b class="fc"><i>117</i>&nbsp;			return 5;</b>
+<b class="fc"><i>118</i>&nbsp;		}if (homeCity.substring(0, 1).equalsIgnoreCase(&quot;g&quot;)) {</b>
+<b class="fc"><i>119</i>&nbsp;			return 6;</b>
+<b class="fc"><i>120</i>&nbsp;		}if (homeCity.substring(0, 1).equalsIgnoreCase(&quot;h&quot;)) {</b>
+<b class="fc"><i>121</i>&nbsp;			return 7;</b>
+<b class="fc"><i>122</i>&nbsp;		}if (homeCity.substring(0, 1).equalsIgnoreCase(&quot;i&quot;)) {</b>
+<b class="fc"><i>123</i>&nbsp;			return 8;</b>
+<b class="fc"><i>124</i>&nbsp;		}if (homeCity.substring(0, 1).equalsIgnoreCase(&quot;j&quot;)) {</b>
+<b class="fc"><i>125</i>&nbsp;			return 9;</b>
+<i>126</i>&nbsp;		} else {
+<b class="fc"><i>127</i>&nbsp;			return 10;</b>
+<i>128</i>&nbsp;		}
+<i>129</i>&nbsp;	}
+<i>130</i>&nbsp;	
+<i>131</i>&nbsp;	public void buildFinalString(String firstName, String lastName, ResultFromInputs resultFromInputs, Conversor conversor) {
+<b class="fc"><i>132</i>&nbsp;		conversor.setNameConverterArrayValues();</b>
+<b class="fc"><i>133</i>&nbsp;		conversor.setAgeConverterArrayValues();</b>
+<b class="fc"><i>134</i>&nbsp;		conversor.setGenderConverterArrayValues();</b>
+<b class="fc"><i>135</i>&nbsp;		conversor.setCityConverterArrayValues();</b>
+<i>136</i>&nbsp;
+<b class="fc"><i>137</i>&nbsp;		int gender = resultFromInputs.getResultForGender();</b>
+<b class="fc"><i>138</i>&nbsp;		int age = resultFromInputs.getResultForAge();</b>
+<b class="fc"><i>139</i>&nbsp;		int name = resultFromInputs.getResultForNameLenght();</b>
+<b class="fc"><i>140</i>&nbsp;		int homecity = resultFromInputs.getResultForHomeCity();</b>
+<i>141</i>&nbsp;
+<b class="fc"><i>142</i>&nbsp;		System.out.println(firstName + &quot; &quot; + lastName + &quot;, your are a great &quot; + conversor.getGenderConverterArray().get(gender));</b>
+<b class="fc"><i>143</i>&nbsp;		System.out.println(conversor.getAgeConverterArray().get(age));</b>
+<b class="fc"><i>144</i>&nbsp;		System.out.println(conversor.getNameConverterArray().get(name)+ &quot; and combining that with the first letter of your homecity, i.e. &quot;+conversor.getCityConverterArray().get(homecity) );</b>
+<b class="fc"><i>145</i>&nbsp;		System.out.println(&quot;it seems that you are a dedicated student and will be a great Software Tester Engineer!&quot;);</b>
+<i>146</i>&nbsp;
+<b class="fc"><i>147</i>&nbsp;	}</b>
+<i>148</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-04-02 01:35</div>
+</div>
+</body>
+</html>
